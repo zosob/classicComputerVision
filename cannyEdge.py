@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 
-img = cv2.read('edge.jpg', cv.IMREAD_GRAYSCALE)
+img = cv.imread('classicComputerVision/edge.jpeg', 0)
 assert img is not None, "File could not be found"
 edges = cv.Canny(img, 100, 200)
 
